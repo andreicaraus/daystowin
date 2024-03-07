@@ -38,7 +38,7 @@ pipeline {
                         folderId: '',
                         jiraProjectVersion: '',
                         name: "${env.FULL_NAME}"  // Using the FULL_NAME variable here
-                    ], filePath: 'target/surefire-reports/junitreports/*.xml', format: 'JUnit XML Result File', projectKey: 'TES', serverAddress: 'https://innovationdays.atlassian.net'
+                    ], filePath: 'target/surefire-reports/junitreports/*.xml', format: 'JUnit XML Result File', projectKey: 'IND', serverAddress: 'https://innovationdays.atlassian.net'
                 }
             }
         }
