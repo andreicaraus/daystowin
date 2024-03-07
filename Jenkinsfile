@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Clone Repository') {
             steps {
-                git credentialsId: '7ea5dd73-51e2-4c25-b5c6-5c24caea6358', url: 'https://github.com/nsalin/daystowin.git'
+                git credentialsId: 'abc8e51b-85c7-47ab-b8d1-84df52a03f51', url: 'https://github.com/andreicaraus/daystowin.git'
             }
         }
         stage('Run TestNG Tests') {

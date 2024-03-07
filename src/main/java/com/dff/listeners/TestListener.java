@@ -45,10 +45,8 @@ public class TestListener implements ITestListener {
         //Do tier down operations for ExtentReports reporting!
     }
 
-
     public void onTestStart(ITestResult iTestResult) {
     }
-
 
     public void onTestSuccess(ITestResult iTestResult) {
         updateZephyrTestCase(iTestResult, "Pass");
@@ -56,11 +54,10 @@ public class TestListener implements ITestListener {
 
 
     public void onTestFailure(ITestResult iTestResult) {
-        updateZephyrTestCase(iTestResult, "FAIL");
+        updateZephyrTestCase(iTestResult, "Fail");
     }
 
     public void onTestSkipped(ITestResult iTestResult) {
         updateZephyrTestCase(iTestResult, "Skip");
-
     }
 }
