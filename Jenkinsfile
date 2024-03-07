@@ -35,7 +35,7 @@ pipeline {
                     publishTestResults autoCreateTestCases: true, customTestCycle: [
                         customFields: '',
                         description: 'BuildResults',
-                        folderId: '',
+                        folderId: '13110221',
                         jiraProjectVersion: '',
                         name: "${env.FULL_NAME}"  // Using the FULL_NAME variable here
                     ], filePath: 'target/surefire-reports/junitreports/*.xml', format: 'JUnit XML Result File', projectKey: 'TES', serverAddress: 'https://innovationdays.atlassian.net'
